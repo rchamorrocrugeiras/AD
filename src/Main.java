@@ -8,5 +8,6 @@ public class Main {
     System.out.println(P1_Metodos.eFicheiro("/home/dam26/Descargas"));
     System.out.println(P1_Metodos.eFicheiro("/home/dam26/asd.txt"));
     System.out.println("--Exercicio 3--");
+    System.out.println();
   }
 }
