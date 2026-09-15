@@ -9,7 +9,7 @@ public class Main {
     System.out.println(P1_Metodos.eFicheiro("/home/dam26/asd.txt"));
     System.out.println("--Exercicio 3--");
     System.out.println(P1_Metodos.creaDirectorio("/home/dam26/Descargas"));
-    System.out.println(P1_Metodos.creaDirectorio("/home/dam26/Prueba"));
+    System.out.println(P1_Metodos.creaDirectorio("/home/dam26/Prueba2"));
     System.out.println("--Exercicio 4--");
     System.out.println(P1_Metodos.creaFicheiro("/home/dam26/Prueba", "qwe.txt"));
     System.out.println("--Exercicio 5--");
@@ -23,6 +23,8 @@ public class Main {
     System.out.println("--Exercicio 9--");
     System.out.println(P1_Metodos.borraFicheiro("/home/dam26/Prueba", "qwe.txt"));
     System.out.println("--Exercicio 10--");
-
+    System.out.println(P1_Metodos.borraDirectorio("/home/dam26/Prueba2"));
+    System.out.println("--Exercicio 11--");
+    P1_Metodos.mContido("/home/dam26/Descargas");
   }
 }

@@ -103,9 +103,31 @@ public class P1_Metodos {
 
         if (arquivo.exists()) {
             arquivo.delete();
-            return "Arquivo eliminado";
+            return "Ficheiro eliminado";
         } else {
             return "O arquivo non existe";
+        }
+    }
+
+    public static String borraDirectorio(String dirName) {
+        File arquivo = new File(dirName);
+
+        if (arquivo.exists()) {
+            arquivo.delete();
+            return "Directorio eliminado";
+        } else {
+            return "O arquivo non existe";
+        }
+    }
+
+    public static void mContido(String dirName) {
+        File arquivo = new File(dirName);
+
+        File[] contido = arquivo.listFiles();
+        if (contido != null) {
+            for (int i = 0; i < contido.length; i++){
+                System.out.println("arquivo " + i + ": " + contido[i].getName());
+            }
         }
     }
 }
