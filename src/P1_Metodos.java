@@ -75,5 +75,38 @@ public class P1_Metodos {
 
         return "Tamaño: " + arquivo.length() + " bytes";
     }
+
+    public static String mLectura(String dirName, String fileName) {
+        File arquivo = new File(dirName, fileName);
+
+        arquivo.setReadOnly();
+        if (arquivo.canRead() && !arquivo.canWrite()) {
+            return "O arquivo é so de lectura";
+        } else {
+            return "O arquivo non é so de lectura";
+        }
+    }
+
+    public static String mEscritura(String dirName, String fileName) {
+        File arquivo = new File(dirName, fileName);
+
+        arquivo.setWritable(true);
+        if (arquivo.canWrite()) {
+            return "Escritura si";
+        } else {
+            return "Escritura non";
+        }
+    }
+
+    public static String borraFicheiro(String dirName, String fileName) {
+        File arquivo = new File(dirName, fileName);
+
+        if (arquivo.exists()) {
+            arquivo.delete();
+            return "Arquivo eliminado";
+        } else {
+            return "O arquivo non existe";
+        }
+    }
 }
 
