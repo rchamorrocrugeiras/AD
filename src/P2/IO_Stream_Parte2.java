@@ -18,4 +18,18 @@ public class IO_Stream_Parte2 {
         entrada.close();
         saida.close();
     }
+
+    public static void engadir() throws IOException {
+        FileInputStream entrada = new FileInputStream("src/P2/foto.jpg");
+        FileOutputStream saida = new FileOutputStream("src/P2/foto2.jpg", true);
+
+        int byteleido;
+
+        while ((byteleido = entrada.read()) != -1) {
+            saida.write(byteleido);
+        }
+
+        entrada.close();
+        saida.close();
+    }
 }
