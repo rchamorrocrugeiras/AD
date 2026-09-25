@@ -12,5 +12,8 @@ public class Main {
     IO_Stream_Parte2.engadir();
 
     IO_Stream_Buffer.copiar();
+
+    Data_Stream.escribir();
+    Data_Stream.ler();
   }
 }
