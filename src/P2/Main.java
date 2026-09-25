@@ -7,5 +7,6 @@ public class Main {
   public static void main(String[] args) throws IOException {
     IO_Stream.copiar();
     IO_Stream.engadir();
+    IO_Stream_Parte2.copiar();
   }
 }
