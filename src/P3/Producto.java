@@ -1,4 +1,10 @@
 package P3;
 
-public class Producto {
+import java.io.Serializable;
+
+public class Producto implements Serializable {
+
+    String nome;
+    int num1;
+    double num2;
 }
